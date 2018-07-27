@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+ul {
+   
+    /* Removes the dots of the bulleted list */
+    list-style-type: none; 
+    /* Removes all default styling --> so we can alter it later */
+    margin: 0;
+    padding: 0;
+    /* If text overflows the <ul> cut it off */
+    overflow: hidden;
+}
+/* a: link is the color/styling for an unvisited link */
+/* a: link is the color/styling for a visited link */
+a:link, a:visited { 
+    display: block;
+    font-weight: bold;
+    color: red;
+    background-color: orange;
+    width: 300px;
+    text-align: center;
+    padding: 21px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Code that changes the styling of a button on the navbar when hovering over it */
+a:hover {
+    background-color: aqua;
+    color: purple;
+}
+
+li {
+    /* Puts everything in the list next to one another */
+    display: inline;
+    float: left;
+    
+
+}
