@@ -1,16 +1,37 @@
 body {
     margin: 0;
-}
-ul {
-   
-    /* Removes the dots of the bulleted list */
-    list-style-type: none; 
-    /* Removes all default styling --> so we can alter it later */
-    margin: 0;
     padding: 0;
-    /* If text overflows the <ul> cut it off */
-    overflow: hidden;
 }
+
+.Navbar {
+    background-color: #FF2313;
+    display: flex;
+    padding: 20px;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: white;
+}
+
+.Navbar_Items {
+    display: flex;
+}
+
+.Navbar_link {
+    padding-right: 10px;
+}
+
+.Navbar_Items--right {
+    margin-left: auto;
+}
+
+.Navbar_link-toggle {
+    display: none;
+    
+}
+
+.Navbar_ToggleShow {
+    display: flex;
+}
+
 /* a: link is the color/styling for an unvisited link */
 /* a: link is the color/styling for a visited link */
 a:link, a:visited { 
@@ -20,7 +41,7 @@ a:link, a:visited {
     background-color: orange;
     width: 300px;
     text-align: center;
-    padding: 21px;
+    padding: 20px;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -31,10 +52,45 @@ a:hover {
     color: purple;
 }
 
-li {
-    /* Puts everything in the list next to one another */
-    display: inline;
-    float: left;
-    
 
+
+#main_img {
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+.person1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* What this query really means, is 
+“If [device width] is less than or equal to 600px, then do {…}” */
+@media (max-width: 800px) {
+    p {
+        
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+    .Navbar,
+    .Navbar_Items {
+        flex-direction: column;
+    }
+    .Navbar_Items {
+        display: none;
+    }
+    .Navbar_Items--right {
+        margin-left: 0;
+    }
+    .Navbar_link-toggle {
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+        cursor: pointer;
+    }
 }
