@@ -63,10 +63,12 @@ p {
     font-size: 1.25rem;
 }
 
-.person1 {
+.home_container {
     display: flex;
     justify-content: space-between;
 }
+
+
 
 
 /* What this query really means, is 
@@ -93,4 +95,8 @@ p {
         position: absolute;
         cursor: pointer;
     }
+    .home_container {
+        flex-direction: column;
+    }
+  
 }
